@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace minimal_api_desafio.Controllers;
 //fazendo teste
+//novo teste
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
@@ -10,6 +11,15 @@ public class WeatherForecastController : ControllerBase
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
+    private static readonly string[] Summaries10 = new[]
+    {
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
+    private static readonly string[] Summaries20 = new[]
+    {
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
+
 
     private readonly ILogger<WeatherForecastController> _logger;
 
